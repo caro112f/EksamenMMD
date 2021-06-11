@@ -78,8 +78,9 @@ a :hover {
   top: 0;
   right: 0;
   text-align: right;
-  margin-right: 5px;
+  padding-right: 5px;
   cursor: pointer;
+  color: white;
 }
 .h2 {
   text-align: center;
@@ -101,6 +102,9 @@ footer h4 {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
+/* .forside_section1 .menuknap {
+  color: white;
+} */
 .forside_section1_ombillede {
   background-image: url(billeder/staarpaabro.jpg);
   background-position: 25% 10%;
@@ -249,17 +253,26 @@ footer h4 {
 /* ------------- IPAD ---------------- */
 
 @media (min-width: 600px) {
-  .forsidebody {
+  body {
     display: grid;
-    grid-template-columns: 1fr minmax(0, 1000px) 1fr;
+    grid-template-columns: 1fr minmax(0, 1200px) 1fr;
   }
   .forside_section1 {
     grid-column: 1/4;
   }
-  .forsidemain {
+  .overskrift {
+    grid-column: 1/4;
+  }
+  .portfolio_nav {
+    grid-column: 1/4;
+  }
+  .ommig_overskrift {
+    grid-column: 1/4;
+  }
+  main {
     grid-column: 2/3;
   }
-  .forsidebody footer {
+  footer {
     grid-column: 1/4;
   }
   h1 {
