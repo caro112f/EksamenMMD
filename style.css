@@ -34,6 +34,8 @@ h5 {
 p {
   font-family: Montserrat;
   font-size: 15px;
+  text-align: left;
+  padding: 10px;
 }
 a {
   list-style: none;
@@ -211,29 +213,22 @@ footer h4 {
   grid-column: 2/3;
   grid-row: 2/3;
 }
-
-.portfolio_section1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.webmain img {
+  box-shadow: -8px 8px 12px grey;
+  margin-top: 20px;
 }
-.portfolio_section1_billede {
-  grid-column: 2/3;
+.uxmain img {
+  box-shadow: -8px 8px 12px grey;
+  margin-top: 20px;
 }
-.portfolio_section1_tekst {
-  grid-column: 1/2;
+.animationmain img {
+  box-shadow: -8px 8px 12px grey;
+  margin-top: 20px;
 }
-
-.portfolio_section2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.ommain img {
+  box-shadow: -8px 8px 12px grey;
+  margin-top: 20px;
 }
-.portfolio_section2_billede {
-  grid-column: 1/2;
-}
-.portfolio_section2_tekst {
-  grid-column: 2/3;
-}
-
 /* ---------- om mig ------- */
 .ommig_overskrift {
   display: grid;
@@ -358,7 +353,7 @@ footer h4 {
     padding-right: 10px;
   }
   .menuknap {
-    margin-right: 20px;
+    padding-right: 20px;
   }
   /* .forside_section1 .menu {
     grid-column: 2/3;
@@ -372,6 +367,98 @@ footer h4 {
     text-align: right;
     margin-right: 20px;
   } */
+  .portfolio_section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .portfolio_section1_billede {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .portfolio_section1_tekst {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .portfolio_section2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .portfolio_section2_billede {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .portfolio_section2_tekst {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .portfolio_section3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .portfolio_section3_billede {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .portfolio_section3_tekst {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  /* ----- Om mig----- */
+  .ommain_section1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .main_section1_billede1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .main_section1_tekst {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .main_section1_billede2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .ommain_section2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .main_section2_billede1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .main_section2_tekst {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .main_section2_billede2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .ommain_section3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .main_section3_billede1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .main_section3_tekst {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .main_section3_billede2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
 }
 /* ----------------DESKTOP--------------- */
 @media (min-width: 1000px) {
