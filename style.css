@@ -4,7 +4,9 @@
   src: url(webfontkit-optima/unicode.optima-webfont.woff2);
 }
 html {
-  background-color: #f2eeec;
+  /* background-color: #f2eeec; */
+  /* background-color: #c7c7c7; */
+  background-color: #e0e0e0;
 }
 body {
   margin: 0;
@@ -23,6 +25,10 @@ h2 {
   font-family: Baskerville, sans-serif;
   font-size: 25px;
 }
+h3 {
+  font-family: Baskerville, sans-serif;
+  font-size: 20px;
+}
 h4 {
   font-family: Baskerville, sans-serif;
   font-size: 20px;
@@ -35,8 +41,13 @@ p {
   font-family: Montserrat;
   font-size: 15px;
   text-align: left;
-  padding: 10px;
 }
+p,
+h3 {
+  padding: 10px;
+  padding-top: 20px;
+}
+
 a {
   list-style: none;
   text-decoration: none;
@@ -286,6 +297,11 @@ footer h4 {
   p {
     font-family: Montserrat;
     font-size: 15px;
+  }
+  p,
+  h3 {
+    padding: 20px;
+    padding-top: 30px;
   }
   .forside_section1 {
     display: grid;
