@@ -260,6 +260,9 @@ footer h4 {
   grid-column: 2/3;
   grid-row: 2/3;
 }
+.ommain h3 {
+  text-align: center;
+}
 
 /* ------------- IPAD ---------------- */
 
