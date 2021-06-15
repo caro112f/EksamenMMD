@@ -1,8 +1,5 @@
 /* ----------- MOBILE FIRST------- */
-@font-face {
-  font-family: Optima;
-  src: url(webfontkit-optima/unicode.optima-webfont.woff2);
-}
+
 html {
   background-color: #e0e0e0;
 }
