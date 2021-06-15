@@ -4,8 +4,6 @@
   src: url(webfontkit-optima/unicode.optima-webfont.woff2);
 }
 html {
-  /* background-color: #f2eeec; */
-  /* background-color: #c7c7c7; */
   background-color: #e0e0e0;
 }
 body {
@@ -21,28 +19,28 @@ img {
 }
 h1 {
   font-family: Baskerville, sans-serif;
-  font-size: 50px;
+  font-size: 2.5rem;
   color: white;
 }
 h2 {
   font-family: Baskerville, sans-serif;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 h3 {
   font-family: Baskerville, sans-serif;
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 h4 {
   font-family: Baskerville, sans-serif;
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 h5 {
   font-family: Montserrat;
-  font-size: 15px;
+  font-size: 1rem;
 }
 p {
   font-family: Montserrat;
-  font-size: 15px;
+  font-size: 1rem;
   text-align: left;
 }
 p {
@@ -113,16 +111,13 @@ footer {
 footer h4 {
   text-decoration: underline;
 }
-/* ------------------FORSIDE---------------- */
-/* -----------section 1------------ */
+/* forside */
+
 .forside_section1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
-/* .forside_section1 .menuknap {
-  color: white;
-} */
 .forside_section1_ombillede {
   background-image: url(billeder/staarpaabro.jpg);
   background-position: 25% 10%;
@@ -147,8 +142,6 @@ footer h4 {
   grid-row: 2/3;
   text-align: center;
 }
-
-/* --------------- section 2---------------- */
 
 .forside_section2 {
   display: grid;
@@ -184,7 +177,7 @@ footer h4 {
   grid-row: 5/7;
 }
 
-/* -------------PORTFOLIO----------- */
+/* portfolio */
 .portfolio_nav {
   background-color: #9da9b1;
   display: grid;
@@ -251,7 +244,7 @@ footer h4 {
   box-shadow: -8px 8px 12px grey;
   margin-top: 20px;
 }
-/* ---------- om mig ------- */
+/* om side */
 .ommig_overskrift {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -303,21 +296,21 @@ footer h4 {
     grid-column: 1/4;
   }
   h1 {
-    font-size: 70px;
+    font-size: 4rem;
   }
   h2 {
-    font-size: 50px;
+    font-size: 2.5rem;
   }
   h4 {
-    font-size: 20px;
+    font-size: 1.3rem;
   }
   h5 {
     font-family: Montserrat;
-    font-size: 15px;
+    font-size: 1rem;
   }
   p {
     font-family: Montserrat;
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 3ch;
   }
   p {
@@ -394,18 +387,63 @@ footer h4 {
   .menuknap {
     padding-right: 20px;
   }
-  /* .forside_section1 .menu {
+}
+/* ------------------ DESKTOP ---------------- */
+@media (min-width: 800px) {
+  .ommain_section1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .main_section1_billede1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .main_section1_tekst {
     grid-column: 2/3;
     grid-row: 1/2;
-    text-align: right;
-    margin-right: 20px;
-  } */
-  /* -----portfolio---- */
-  /* .overskrift > .menu {
+  }
+  .main_section1_billede2 {
     grid-column: 3/4;
-    text-align: right;
-    margin-right: 20px;
-  } */
+    grid-row: 1/2;
+  }
+  .ommain_section2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .main_section2_billede1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .main_section2_tekst {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .main_section2_billede2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .ommain_section3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .main_section3_billede1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .main_section3_tekst {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .main_section3_billede2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+  .ommain p {
+    padding-top: 50px;
+  }
   .portfolio_section1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -468,81 +506,23 @@ footer h4 {
     grid-row: 1/2;
   }
 }
-
-@media (min-width: 800px) {
-  .ommain_section1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-  }
-  .main_section1_billede1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  .main_section1_tekst {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .main_section1_billede2 {
-    grid-column: 3/4;
-    grid-row: 1/2;
-  }
-  .ommain_section2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-  }
-  .main_section2_billede1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  .main_section2_tekst {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .main_section2_billede2 {
-    grid-column: 3/4;
-    grid-row: 1/2;
-  }
-  .ommain_section3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-  }
-  .main_section3_billede1 {
-    grid-column: 1/2;
-    grid-row: 1/2;
-  }
-  .main_section3_tekst {
-    grid-column: 2/3;
-    grid-row: 1/2;
-  }
-  .main_section3_billede2 {
-    grid-column: 3/4;
-    grid-row: 1/2;
-  }
-  .ommain p {
-    padding-top: 50px;
-  }
-}
-/* ----------------DESKTOP--------------- */
 @media (min-width: 1000px) {
   h1 {
-    font-size: 80px;
+    font-size: 5rem;
   }
   h2 {
-    font-size: 50px;
+    font-size: 2.8rem;
   }
   h4 {
-    font-size: 30px;
+    font-size: 1.8rem;
   }
   h5 {
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 1.3rem;
   }
   p {
     font-family: Montserrat;
-    font-size: 15px;
+    font-size: 1rem;
   }
   .forside_section1 {
     display: grid;
@@ -575,17 +555,13 @@ footer h4 {
     grid-row: 3/4;
     text-align: center;
   }
-  /* .forside_section1 .menu {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    text-align: right;
-    margin-right: 20px;
-  } */
   .forside_section_h2 {
     text-align: center;
     padding-bottom: 50px;
   }
 }
+
+/* ----- JAVASCRIPT ANIMATION----- */
 .hide {
   display: none;
 }
